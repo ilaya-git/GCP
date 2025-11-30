@@ -18,7 +18,7 @@ graph TD
 ### 1. Clone Repository
 ```bash
 git clone <your-repo-url>
-cd dataflow
+cd Dataflow
 ```
 
 ### 2. Configure GCP
