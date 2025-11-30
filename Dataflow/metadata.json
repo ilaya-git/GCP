@@ -1,0 +1,24 @@
+{
+    "name": "GCS to BigQuery Pipeline",
+    "description": "Simple pipeline to read CSV files from GCS and load into BigQuery",
+    "parameters": [
+        {
+            "name": "input_path",
+            "label": "Input GCS Path",
+            "helpText": "GCS path to input CSV files (e.g., gs://your-bucket/input/*.csv)",
+            "isOptional": false,
+            "regexes": [
+                "^gs:\\/\\/[^\\n\\r]+$"
+            ]
+        },
+        {
+            "name": "output_table",
+            "label": "Output BigQuery Table",
+            "helpText": "BigQuery table in format project:dataset.table",
+            "isOptional": false,
+            "regexes": [
+                "^[^:]+:[^.]+\\.[^.]+$"
+            ]
+        }
+    ]
+}
